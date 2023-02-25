@@ -8,5 +8,7 @@ class Conjunto:
         elif len(self.__conjunto) == 2:
             promedio = (self.__conjunto[0] + self.__conjunto[1])/2
             return promedio
+        elif len(self.__conjunto) > 2:
+            return sum(self.__conjunto) / len(self.__conjunto)
         else:
             return None
